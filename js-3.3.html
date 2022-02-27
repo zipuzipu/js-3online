@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<script >
+	function grade() {
+		let mid = Math.ceil(sum / n);
+		if(mid == 5) alert('Үздік оқушы');
+		else if(mid == 4) alert('Жақсы оқушы');
+		else if(mid == 3) alert('Қанағаттанарлық оқушы');
+		else if(mid == 2) alert('Нашар оқушы');
+	}
+	let sum = 0;
+	let n = +prompt("Оқушының орта бағасын білу үшін қанша сан қажет?");
+
+	for (var i = 1; i <= n; i++) {
+		let n1 = + prompt(`${i}-бағаны енгіңіз:`);
+		sum += n1
+
+	}
+	grade();
+
+</script>
